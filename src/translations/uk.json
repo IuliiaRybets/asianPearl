@@ -1,0 +1,651 @@
+{
+  "headers": {
+    "carsInStock": "Є {{count}} автомобілів на складі",
+    "brand": "Бренд",
+    "series": "Серії",
+    "model": "Модель",
+    "type": "Тип",
+    "vehicleType": "Транспортного засобу",
+    "all": "Всі",
+    "newVehicles": "Новий",
+    "usedVehicles": "Використовується",
+    "demoVehicles": "Ведучий",
+    "red": "Червоний",
+    "black": "Чорний",
+    "brown": "Коричневий",
+    "beige": "Бежевий",
+    "other": "Інші"
+  },
+  "application": {
+    "back": "Назад",
+    "reset": "Скинути",
+    "searchResultCount": "{{count}} Результати пошуку",
+    "print": "Друкувати",
+    "net": "Мережі",
+    "gross": "Валовий",
+    "yes": "Так",
+    "no": "Ні",
+    "vat": "Пдв.",
+    "edit": "Змінити",
+    "save": "Зберегти",
+    "cancel": "Скасувати",
+    "confirm": "Гаразд",
+    "delete": "Видалити",
+    "update": "Оновлення"
+  },
+  "dialogs": {
+    "timeStamp": "час:",
+    "bmwConversationId": "Bmw-ris-conversation-id:",
+    "confirmation": {
+      "title": "Продовжити?",
+      "subTitle": "Підтвердьте дію.",
+      "deleteOfferPrices": {
+        "title": "Підтвердження видалення",
+        "subTitle": "Видалити ціну пропозиції та маркери фінансування?"
+      },
+      "deleteTokens": {
+        "deleteOfferPriceTokenCheckbox": "Маркери SF видаляються.",
+        "subTitle": "Ціна пропозиції не буде відповідати пропозиції SF, якщо ви не видалите його.",
+        "title": "Ви змінили ціну, ви хочете видалити маркери SF?"
+      },
+      "updateTokens": {
+        "updateOfferPriceTokenCheckbox": "Токени SF будуть оновлені.",
+        "subTitle": "Ціна пропозиції не відповідає SF пропозиції, якщо ви її не оновите.",
+        "title": "Ви змінили ціни, хочете також оновити токени?"
+      },
+      "deleteSfOfferIds": {
+        "title": "Підтвердження видалення",
+        "subTitle": "Видалити маркери фінансування?"
+      }
+    },
+    "priceChangeUpdateConfirmation": {
+      "title": "Нові ціни були обчислювані у зв\u0027язку з податковими коригуваннями. Застосувати зміни?",
+      "deleteAllSfOfferIdsCheckbox": "Маркери фінансування видаляються.",
+      "listHeader": {
+        "oldPrice": "Старий",
+        "newPrice": "Новий",
+        "priceType": "Оновлена ціна"
+      }
+    },
+    "editStatus": {
+      "title": "Оновити стан",
+      "status": {
+        "titleLabel": "Установлення стану доступності",
+        "valueLabel": "Недоступний"
+      },
+      "visibility": {
+        "label": "Встановлення видимості транспортного засобу",
+        "visibilitydealershipLabel": "Дилерська",
+        "showVisibilityOnlineLinkLabel": "Онлайн"
+      },
+      "availability": {
+        "label": "Наявність"
+      },
+      "comment": {
+        "label": "Додати примітку оновлення",
+        "placeholder": "Автовити набір як доступний"
+      }
+    }
+  },
+  "search": {
+    "exact": {
+      "placeholder": "3MW5R1801L8A00330 або 6015185",
+      "label": "Пошук VIN (7/17) або номер замовлення"
+    },
+    "all": "Всі",
+    "from": "З",
+    "to": "Щоб",
+    "optionPackageSearch": {
+      "searchFieldPlaceholder": "S0474, тканина...",
+      "label": "Пошук за кодом або назвою обладнання",
+      "includeHeader": "Дюйма",
+      "excludeHeader": "Колишній",
+      "options": "Параметри",
+      "packages": "Пакунки",
+      "filter": {
+        "include": "Включаючи",
+        "exclude": "Ексклюзивні",
+        "label": "Фільтр"
+      },
+      "sort": {
+        "codeAsc": "Код А-З",
+        "codeDesc": "Код Z-A",
+        "descriptionAsc": "Опис Z-A",
+        "descriptionDesc": "Опис А-З",
+        "label": "Сортування"
+      }
+    },
+    "fieldGroup": {
+      "usageState": {
+        "label": "Транспортного засобу"
+      },
+      "upholsteryType": {
+        "label": "Подушка"
+      },
+      "colorCluster": {
+        "label": "Колір"
+      },
+      "configuration": {
+        "label": "Зовнішній інтер\u0027єр"
+      },
+      "upholsteryColorCluster": {
+        "label": "Оббивка кольору"
+      }
+    },
+    "stockAvailability": {
+      "AVAILABLE": "Доступні",
+      "UNAVAILABLE": "Недоступний",
+      "RESERVED": "Захищені"
+    },
+    "vehicleSalesProcessState": {
+      "AVAILABLE": "Доступні",
+      "BLOCKED": "Заблоковані",
+      "RESERVED_MANUAL": "Ручне бронювання",
+      "RESERVED_CONTRACT": "Зарезервовано для контракту",
+      "CONTRACT_SIGNED": "Контракт підписано",
+      "SOLD": "Продаються"
+    },
+    "checkbox": {
+      "usageState": {
+        "NEW": "Новий",
+        "USED": "Використовується",
+        "YOUNG_USED": "Молоді використовували",
+        "OWN_USED": "Молодий використовується дилером",
+        "OTHER": "Інші"
+      },
+      "colorCluster": {
+        "BLACK": "Чорний",
+        "RED": "Червоний",
+        "GRAY": "Сірий",
+        "ORANGE": "Помаранчевий",
+        "WHITE": "Білий",
+        "BROWN": "Коричневий",
+        "BLUE": "Синій",
+        "YELLOW": "Жовтий",
+        "GREEN": "Зелений"
+      },
+      "upholsteryColorCluster": {
+        "BLACK": "Чорний",
+        "RED": "Червоний",
+        "GREY": "Сірий",
+        "BEIGE": "Бежевий",
+        "WHITE": "Білий",
+        "BROWN": "Коричневий",
+        "BLUE": "Синій",
+        "COGNAC": "Коньяк",
+        "GREEN": "Зелений"
+      },
+      "online": {
+        "label": "Доступно в Інтернеті",
+        "checkboxLabel": "BMW, BMWi \u0026amp; MINI транспортних засобів",
+        "tooltip": "Відображаються лише транспортні засоби, доступні в Інтернеті."
+      },
+      "hasOfferPrices": {
+        "label": "Ціни",
+        "checkboxLabel": "Ціна пропозиції підтримується"
+      },
+      "hasOfferPricesFalse": {
+        "checkboxLabel": "Ціна пропозиції не підтримується"
+      }
+    },
+    "dropdown": {
+      "pleaseSelect": "Будь ласка, оберіть...",
+      "usageState": {
+        "subLabel": "Тип транспортного засобу",
+        "options": {
+          "NEW": "Новий",
+          "USED": "Був у використуванні",
+          "OWN_USED": "Дилери транспортних засобів",
+          "YOUNG_USED": "Молоді використовували",
+          "OTHER": "Інші"
+        }
+      },
+      "salesDestinations": {
+        "label": "Місце призначення збуту",
+        "options": {
+          "NSC_ONLINE_SL": "Nsc Інтернет продажів"
+        }
+      },
+      "buNos": {
+        "label": "Буно (Е)"
+      },
+      "brands": {
+        "label": "Бренд",
+        "subLabel": "Бренд",
+        "options": {
+          "BMW": "Bmw",
+          "BMWi": "Бомві (Е)",
+          "MINI": "Міні",
+          "OTHER": "Інші"
+        }
+      },
+      "series": {
+        "label": "Серії",
+        "subLabel": "Серії"
+      },
+      "modelRange": {
+        "label": "Модельний ряд",
+        "subLabel": "Модельний ряд"
+      },
+      "vgModelCode": {
+        "label": "Модель",
+        "subLabel": "Модель"
+      },
+      "productTypes": {
+        "label": "Продукт",
+        "subLabel": "Продукт",
+        "options": {
+          "CAR": "Автомобіль",
+          "MOTORCYCLE": "Мотоцикл"
+        }
+      },
+      "fuelType": {
+        "label": "Тип палива",
+        "subLabel": "Тип палива",
+        "options": {
+          "GASOLINE": "Бензин",
+          "DIESEL": "Дизель",
+          "GASOLINE_HYBRID": "Гібридний бензин",
+          "DIESEL_HYBRID": "Гібридний дизель",
+          "ELECTRIC": "Електричний",
+          "OTHER": "Інші"
+        }
+      },
+      "transmission": {
+        "label": "Тип передачі",
+        "subLabel": "Тип передачі",
+        "options": {
+          "AUTOMATIC": "Автоматичне",
+          "MANUAL": "Ручна"
+        }
+      },
+      "driveType": {
+        "label": "Привід",
+        "subLabel": "Привід",
+        "options": {
+          "ALL_WHEEL": "Колесо",
+          "FRONT": "Передній",
+          "REAR": "Задній",
+          "CHAIN": "Ланцюг",
+          "BELT": "Зубчатий ремінь",
+          "CARDAN": "Кардан"
+        }
+      },
+      "invoiceLegalEntity": {
+        "label": "Рахунок юридичної особи",
+        "subLabel": "Рахунок юридичної особи",
+        "options": {
+          "26558": "Прокар автомобільний GmbH \u0026amp; Ko.KG"
+        }
+      },
+      "availabilities": {
+        "label": "Наявність",
+        "subLabel": "Наявність",
+        "options": {
+          "AVAILABLE": "Доступні",
+          "UNAVAILABLE": "Недоступний"
+        },
+        "tooltip": "Доступність виражає, чи призначено транспортний засіб клієнту."
+      },
+      "vehicleSalesProcessState": {
+        "label": "Наявність",
+        "options": {
+          "AVAILABLE": "Доступні",
+          "BLOCKED": "Заблоковані",
+          "RESERVED_MANUAL": "Ручне бронювання",
+          "RESERVED_CONTRACT": "Зарезервовано для контракту",
+          "CONTRACT_SIGNED": "Контракт підписано",
+          "SOLD": "Продаються"
+        },
+        "tooltip": "Наявність виражає статус транспортного засобу в процесі продажу."
+      },
+      "processingType": {
+        "label": "IVS Processing Type"
+      },
+      "degreeOfElectrification": {
+        "label": "Degree of Electrification"
+      },
+      "paintType": {
+        "label": "Тип фарби",
+        "subLabel": "Тип фарби",
+        "options": {
+          "METALLIC": "Металеві",
+          "UNI": "Uni",
+          "OTHER": "Інші"
+        }
+      },
+      "upholsteryType": {
+        "label": "Оббивка типу",
+        "subLabel": "Оббивка типу",
+        "options": {
+          "FABRIC": "Тканини",
+          "LEATHER": "Шкіряні",
+          "INDIVIDUALLEATHER": "Шкіра індивідуальна",
+          "LEATHERETTE": "Шкіра штучна",
+          "OTHER": "Інші"
+        }
+      },
+      "priceType": {
+        "label": "Дивіться ціни за",
+        "subLabel": "Дивіться ціни за",
+        "options": {
+          "GROSS": "Валові ціни",
+          "NET": "Чисті ціни"
+        }
+      }
+    },
+    "textInput": {
+      "ivsxStatus": {
+        "label": "Стан замовлення",
+        "fromErrorMessage": "Введіть припустимий стан замовлення.",
+        "toErrorMessage": "Введіть припустимий стан замовлення."
+      },
+      "milageRanges": {
+        "label": "Пробіг"
+      },
+      "leaveDays": {
+        "label": "Залишити днів"
+      },
+      "price": {
+        "label": "Прайс-прейскурант (брутто)",
+        "fromErrorMessage": "Введіть номер ціни.",
+        "toErrorMessage": "Введіть номер ціни."
+      },
+      "wltpCo2CombinedRanges": {
+        "label": "WLTP CO2 комбінований",
+        "fromErrorMessage": "Введіть припустимий діапазон.",
+        "toErrorMessage": "Введіть припустимий діапазон."
+      },
+      "wltpCo2Range": {
+        "label": "WLTP CO2",
+        "fromErrorMessage": "Введіть припустимий діапазон.",
+        "toErrorMessage": "Введіть припустимий діапазон."
+      },
+      "wltpConsumptionRange": {
+        "label": "WLTP Споживання",
+        "fromErrorMessage": "Введіть припустимий діапазон.",
+        "toErrorMessage": "Введіть припустимий діапазон."
+      }
+    }
+  },
+  "results": {
+    "totalCount": "\u003cspan\u003e{{ total }}\u003c/span\u003e знайдено транспортні засоби",
+    "scrollUpToSearchForm": "прокрутіть угору, щоб настроїти пошук",
+    "table": {
+      "customizeTable": {
+        "dropdownLabel": "Настроювання подання",
+        "dragDropExplanation": "Виділіть стовпці, які потрібно переглянути або приховати. Перетягніть, щоб впорядкувати.",
+        "showImagesCheckboxLabel": "Показати мініатюри транспортних засобів"
+      },
+      "header": {
+        "vehicleSalesProcessState": "Статус",
+        "VIN17": "Fin",
+        "orderNumber": "Номер замовлення",
+        "availability": "Статус",
+        "vehicleState": "Транспортного засобу",
+        "brand": "Бренд",
+        "productType": "Продукт",
+        "model": "Модель",
+        "vehicleColor": "Колір",
+        "upholstery": "Тканини",
+        "powerKW": "Квт",
+        "grossPrice": "Прайс-прейскурант (брутто)",
+        "VehicleImage": "Зображення транспортного засобу",
+        "buno": "Буно (Е)",
+        "offerNetPrice": "Ціна пропозиції (нетто)",
+        "offerGrossPrice": "Ціна пропозиції (брутто)",
+        "offerPriceUpdatedAt": "Пропозиція оновлюється за",
+        "processingtype": "Використання",
+        "orderStatus": "Статус замовлення",
+        "offerPriceType": "Offerprice type"
+      },
+      "vehicleState": {
+        "NEW": "Новий",
+        "USED": "Використовується",
+        "DEMO": "Ведучий",
+        "YOUNG_USED": "Молоді використовували",
+        "OWN_USED": "Молодий використовується дилером",
+        "OTHER": "Інші"
+      },
+      "productType": {
+        "CAR": "Автомобіля",
+        "MOTORCYCLE": "Мотоцикл"
+      }
+    }
+  },
+  "details": {
+    "header": {
+      "backButton": "Назад",
+      "continueButton": "Continue"
+    },
+    "visibility": {
+      "label": "Видимість",
+      "online": "Онлайн",
+      "onlineAndDealer": "Інтернет \u0026amp; Дилер"
+    },
+    "quickFacts": {
+      "availabilityState": {
+        "infoIconContent": {
+          "lastUpdated": "Last Updated",
+          "offerNumber": "Offer Number",
+          "businessPartnerID": "BusinessPartnerID",
+          "comments": "Comments"
+        }
+      },
+      "digitalBrochureLinkLabel": "Цифрова брошура",
+      "vehicleState": "Транспортного засобу",
+      "vin": "Fin",
+      "vin10": "Fin",
+      "orderNumber": "Номер замовлення",
+      "orderStatus": "Статус замовлення",
+      "ivsProcessingType": "Використання",
+      "location": "Розташування",
+      "grossListPrice": "Прайс-прейскурант (брутто)",
+      "netListPrice": "Прайс-список (нетто)",
+      "productionDate": "Дата виробництва",
+      "registrationDate": "Дата реєстрації",
+      "accidentFree": "Без нещасних випадків",
+      "editStatus": "Cтан",
+      "stockNumber": "Iнвентарний номер",
+      "licencePlate": "Номерний знак",
+      "mileageInKm": "Пробіг",
+      "vatType": "VAT type"
+    },
+    "dataList": {
+      "leaseAndLoan": {
+        "label": "Лізинг та фінансування",
+        "idNumber": "Ідентифікаційний номер",
+        "addNewIdNumber": "Додавання нового ідентифікаційний номер",
+        "missingOfferPricesWarning": "Ви не можете внести депозитні жетони SF, поки ви не зберегли ціну пропозиції"
+      },
+      "features": {
+        "label": "Об\u0027єктів",
+        "vehicle": {
+          "code": "Код",
+          "description": "Опис",
+          "price": "Ціна",
+          "dropDown": "Переглянути ціну від",
+          "label": "Переглянути ціну від"
+        }
+      },
+      "vehicle": {
+        "label": "Транспортний засіб"
+      },
+      "standardEquipments": {
+        "label": "Стандартний"
+      },
+      "packageLineVariant": {
+        "label": "Пакунки"
+      },
+      "specialEquipments": {
+        "label": "Додатково"
+      },
+      "price": {
+        "invalidPriceInput": "Неприпустима ціна",
+        "label": "Ціни",
+        "priceDetails": "Ціна",
+        "featuresTotalPrice": {
+          "label": "Устаткування спеціальне (сума)"
+        },
+        "modelPrice": {
+          "label": "Модель премії"
+        },
+        "totalTaxes": {
+          "label": "Податки (всього)"
+        },
+        "vehicleState": {
+          "label": "Транспортного засобу"
+        },
+        "totalListPrice": {
+          "label": "Загальна ціна за прайсом"
+        },
+        "vehiclePrice": {
+          "label": "Ціна транспортного засобу"
+        },
+        "offerPrices": {
+          "label": "Ціна"
+        },
+        "FULLFILLMENT": {
+          "label": "Підготовка одноразової суми"
+        },
+        "salesListPrice": {
+          "label": "Роздрібна ціна"
+        }
+      },
+      "orderData": {
+        "label": "Дані замовлення",
+        "orderNumber": {
+          "label": "Номер замовлення"
+        },
+        "ivsProcessingType": {
+          "label": "Використання"
+        },
+        "productionQuotaCode": {
+          "label": "Квота трейдерів"
+        },
+        "orderStatus": {
+          "label": "Стан замовлення"
+        },
+        "quotaMonth": {
+          "label": "Місяць квоти"
+        },
+        "dealerId": {
+          "label": "Місцевий дилер номер"
+        },
+        "productionDate": {
+          "label": "Дата виробництва"
+        }
+      },
+      "vehicleData": {
+        "label": "Транспортного засобу",
+        "interiorImage": {
+          "label": "Зображення інтер\u0027єру"
+        },
+        "vin17": {
+          "label": "Шасі"
+        },
+        "vin10": {
+          "label": "Шасі"
+        },
+        "buNo": {
+          "label": "Буно (Е)"
+        },
+        "brand": {
+          "label": "Бренд"
+        },
+        "vehicleState": {
+          "label": "Транспортного засобу"
+        },
+        "modelCode": {
+          "label": "Код моделі"
+        },
+        "fuelType": {
+          "label": "Палива"
+        }
+      },
+      "technicalData": {
+        "label": "Технічні дані",
+        "dimensionsImage": {
+          "label": "Розміри"
+        },
+        "vin17": {
+          "label": "Шасі"
+        },
+        "degreeOfElectrification": {
+          "label": "Категорія транспортного засобу",
+          "values": {
+            "NOHY_NO_HYBRID": "Немає гібридного"
+          }
+        },
+        "doorCount": {
+          "label": "Кількість дверей"
+        },
+        "electricBatteryCapacityInAh": {
+          "label": "потужність електричного акумулятора (Ах)"
+        },
+        "electricExtendedRangeKm": {
+          "label": "Розширений електричний діапазон (км)"
+        },
+        "electricRangeKm": {
+          "label": "електричний діапазон (км)"
+        },
+        "combinedEmission": {
+          "label": "Викиди в поєднанні"
+        },
+        "drivingCycle": {
+          "label": "Вихлопний газовий стандарт"
+        },
+        "efficiencyClass": {
+          "label": "Клас ефективності"
+        },
+        "is48Volt": {
+          "label": "48в (48в)"
+        },
+        "seatCount": {
+          "label": "Кількість місць"
+        },
+        "tankCapacity": {
+          "label": "Ємність бака (літрів)"
+        },
+        "timeFrom0To100Kmh": {
+          "label": "Прискорення (0-100 км/год)"
+        },
+        "topSpeed": {
+          "label": "Максимальна швидкість (км/год)"
+        },
+        "torque": {
+          "label": "Момент моменту (нм)"
+        }
+      }
+    },
+    "resultTableTabs": {
+      "OUTLET": {
+        "label": "Outlet ({{totalCount}})"
+      },
+      "LEGAL_ENTITY": {
+        "label": "Legal Entity ({{totalCount}})"
+      },
+      "CENTRAL_STOCK": {
+        "label": "BMW AG ({{totalCount}})"
+      },
+      "OWNER": {
+        "label": "Owner ({{totalCount}})"
+      },
+      "OTHER_DEALERS": {
+        "label": "Інші дилери ({{totalCount}})"
+      },
+      "YOUNG_USED": {
+        "label": "GWM ({{totalCount}})"
+      }
+    },
+    "salesDestination": "Онлайн"
+  },
+  "service": {
+    "issue": {
+      "notReachable": "Система недоступна",
+      "genericErrorTitle": "Сталася помилка",
+      "offerPriceSavingError": "Не вдалося зберегти ціни на пропозицію через помилку в системі",
+      "sfSavingError": "Не вдалося зберегти інформацію SF через помилку в системі"
+    }
+  }
+}

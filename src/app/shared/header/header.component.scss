@@ -1,0 +1,16 @@
+@import "../../../styles";
+
+.nav-item {
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-image: url("../../../assets/bubbles.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contactbar {
+    background-color: $el-green;
+}

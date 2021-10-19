@@ -1,0 +1,75 @@
+$carousel-height: 500px;
+$control-size: 50px;
+
+
+  
+.bubbles {
+    background-image: url("../../assets/bubbles-22500.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.carousel {
+  
+    width: 100vw;
+    height: $carousel-height;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    
+    &:hover .controls {
+      opacity: 1;
+    }
+  
+    .controls {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 99999;
+      transition: all ease 0.5s;
+      
+      .control {
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+        opacity: .5;
+        transition: ease .3s;
+        cursor: pointer;
+        
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    
+      .slides {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        width: 100%;
+        transition: 1s ease-in-out all;
+        
+        .slide {
+          min-width: 100%;
+          min-height: $carousel-height;
+          height: auto;
+        }
+      }
+  }
