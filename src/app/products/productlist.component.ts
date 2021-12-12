@@ -1,7 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../service/product.service';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
+// the format of the expected response
+export class Product {
+  constructor(
+    public name: string,
+    public ingredients: string,
+    public aroma: string,
+    public functionality: string
+  ){}
+}
 
 @Component({
     selector: 'app-home',
@@ -9,19 +17,21 @@ import { Observable } from 'rxjs';
 })
 
 export class ProductList implements OnInit {
-  
-  products!: Observable<[]>;
-
-  constructor( private readonly productsService: ProductsService) { }
-
-  ngOnInit(): void {
-    this.products = this.productsService.getProductsValue();
-
-    console.log("this.products", this.products.subscribe(async (value) => {
-      return value;
-    }));
-
+  products: Product[] = [];
+  constructor(private httpClient: HttpClient) {
   }
 
+  ngOnInit(): void {
+    console.log("product page", this.getProducts());
+  }
+
+  getProducts() {
+    console.log("getProducts");
+    this.httpClient.get<any>('api/products').subscribe(
+      response => {
+        console.log(response);
+        this.products = response;
+      }
+    );
+  }
 }
-  
