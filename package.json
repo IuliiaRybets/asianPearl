@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve",
+    "start:prod" : "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start-mock-server": "json-server --port 4000 --watch mock/mock-data.json"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/router": "~11.1.2",
     "bootstrap": "^5.1.0",
     "bootstrap-icons": "^1.7.1",
+    "json-server": "^0.17.0",
     "ng-bootstrap": "^1.6.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
