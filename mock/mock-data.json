@@ -1,0 +1,15 @@
+{"products" : [
+    {
+        "name": "Natural Koffee Peeling Seife",
+        "ingredients": "Koffee",
+        "aroma": "Natural mit Kaffee Aroma",
+        "functionality": "Activieren dein Haut, peeling off die veraltete und tote Haut"
+    },
+    {
+        "name": "Orange & Lime Seife",
+        "ingredients": "Orangenschale, Limenschale",
+        "aroma": "Natural mit Orange & Lime Aroma",
+        "functionality": "Sehr frishe Geruche, gibt dir ein Sommerliche Gefühl"
+    }
+]
+}
