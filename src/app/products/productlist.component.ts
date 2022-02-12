@@ -1,15 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-// the format of the expected response
-export class Product {
-  constructor(
-    public name: string,
-    public ingredients: string,
-    public aroma: string,
-    public functionality: string
-  ){}
-}
+import { ProductService } from '../service/product.service';
+import { Product } from './product.model';
 
 @Component({
     selector: 'app-home',
@@ -17,21 +8,14 @@ export class Product {
 })
 
 export class ProductList implements OnInit {
-  products: Product[] = [];
-  constructor(private httpClient: HttpClient) {
+  products: Product[] | undefined;
+  
+  constructor(private productService: ProductService) {
   }
 
   ngOnInit(): void {
-    console.log("product page", this.getProducts());
+    this.products = this.productService.getProducts();
+    console.log("product page", this.products);
   }
 
-  getProducts() {
-    console.log("getProducts");
-    this.httpClient.get<any>('api/products').subscribe(
-      response => {
-        console.log(response);
-        this.products = response;
-      }
-    );
-  }
 }

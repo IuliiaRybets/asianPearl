@@ -7,12 +7,17 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductList } from './products/productlist.component';
+import { ProductdetailComponent } from './products/productdetail/productdetail.component';
+import { ProductItemComponent } from './products/product-item/product-item.component';
+import { ProductService } from './service/product.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductList
+    ProductList,
+    ProductdetailComponent,
+    ProductItemComponent
   ],
   imports: [
     SharedModule,
@@ -20,7 +25,7 @@ import { ProductList } from './products/productlist.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

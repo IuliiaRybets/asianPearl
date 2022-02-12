@@ -1,12 +1,44 @@
 {"products" : [
     {
+        "id": "001",
         "name": "Natural Koffee Peeling Seife",
+        "img_arr": [
+            "assets/products/IMG_0147.JPG",
+            "assets/products/IMG_0147.JPG"
+        ],
         "ingredients": "Koffee",
         "aroma": "Natural mit Kaffee Aroma",
         "functionality": "Activieren dein Haut, peeling off die veraltete und tote Haut"
     },
     {
+        "id": "002",
         "name": "Orange & Lime Seife",
+        "img_arr": [
+            "assets/products/IMG_0142.JPG",
+            "assets/products/IMG_0142.JPG"
+        ],
+        "ingredients": "Orangenschale, Limenschale",
+        "aroma": "Natural mit Orange & Lime Aroma",
+        "functionality": "Sehr frishe Geruche, gibt dir ein Sommerliche Gefühl"
+    },
+    {
+        "id": "003",
+        "name": "Orange & Lime Seife",
+        "img_arr": [
+            "assets/products/IMG_0151.JPG",
+            "assets/products/IMG_0151.JPG"
+        ],
+        "ingredients": "Orangenschale, Limenschale",
+        "aroma": "Natural mit Orange & Lime Aroma",
+        "functionality": "Sehr frishe Geruche, gibt dir ein Sommerliche Gefühl"
+    },
+    {
+        "id": "004",
+        "name": "Orange & Lime Seife",
+        "img_arr": [
+            "assets/products/IMG_0153.JPG",
+            "assets/products/IMG_0153.JPG"
+        ],
         "ingredients": "Orangenschale, Limenschale",
         "aroma": "Natural mit Orange & Lime Aroma",
         "functionality": "Sehr frishe Geruche, gibt dir ein Sommerliche Gefühl"
