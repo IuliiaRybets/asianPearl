@@ -1,4 +1,18 @@
 # AP
+## Run the program
+### Run locally with mock server
+```
+npm run build
+npm run start-mock-server
+npm run start
+```
+
+### Run in Docker
+From the root directory, run:
+```
+. ./scripts/build.sh
+. ./scripts/run.sh
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
 
