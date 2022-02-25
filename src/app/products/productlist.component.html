@@ -1,12 +1,11 @@
-<div class="row">
-  <div class="col-xs-12">
-    <ul class="list-group">
+<div class="">
+    <ul class="row">
       <app-product-item
+        class="col"
         *ngFor="let product of products"
         [product]="product"
         ></app-product-item>
     </ul>
-  </div>
 </div>
 
 
