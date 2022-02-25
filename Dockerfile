@@ -1,18 +1,12 @@
-FROM node AS build-stage
-
+# Stage 1
+FROM node:12-alpine AS build 
 WORKDIR /app-root
-RUN mkdir app
-WORKDIR /app-root/app
-COPY package*.json .
-COPY angular.json .
-COPY tsconfig*.json .
+COPY package.json .
+# no need for this since you put your workdir path
+# RUN cd /usr/src/sample 
+RUN npm install 
+COPY . .
 
-RUN npm install
-RUN chmod 777 /app-root/app/node_modules
-
-COPY src ./src
-
-RUN npm run build
-
-FROM nginx:alpine
-COPY --from=build-stage /app-root/app/build /usr/share/nginx/html
+# Stage 2
+FROM nginx:1.17.1-alpine 
+COPY --from=build /app-root/dist/asianPearl /usr/share/nginx/html/
