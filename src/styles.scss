@@ -7,4 +7,10 @@ $el-violet: #390164;
 $el-white: #fff;
 $el-grey: #665973;
 
-$element-padding: 1rem
+$element-padding: 1rem;
+
+.text-no-deco {
+    text-decoration: none;  
+    color: $el-grey;
+}
+    

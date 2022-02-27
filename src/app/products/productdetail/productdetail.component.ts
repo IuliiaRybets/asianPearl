@@ -17,8 +17,12 @@ export class ProductdetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.productService.productSelected.subscribe(
-      (product: Product) => this.productSelected = product
+      (product: Product) => {
+        this.productSelected = product
+        this.product_id = product.id
+      }
     )
+    console.log(this.product_id)
   }
 
 }

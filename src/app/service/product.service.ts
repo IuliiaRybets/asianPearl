@@ -25,7 +25,9 @@ export class ProductService {
         
         // const resp = await this.httpClient.get<any>('http://localhost:4000/products').toPromise();
         // return resp.
-        
+        console.log("product.service.ts: getProducts=", this.subject)
         return this.subject;
     }
+
+    // public getProductById(id)
 }

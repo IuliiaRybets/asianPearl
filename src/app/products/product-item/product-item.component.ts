@@ -16,6 +16,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   onSelect() {
+    console.log("click", this.product)
     this.productService.productSelected.emit(this.product);
   }
 }
