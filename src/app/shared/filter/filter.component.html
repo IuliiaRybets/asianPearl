@@ -1,11 +1,8 @@
 <!-- Example single danger button -->
 
 <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-  <button class="btn btn-outline-primary me-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">Toggle
-    dropdown</button>
+  <button class="btn btn-outline-primary me-2" id="dropdownManual" ngbDropdownAnchor (click)="myDrop.open()">{{selectedSortOrder}}</button>
   <div ngbDropdownMenu aria-labelledby="dropdownManual">
-    <button ngbDropdownItem>Action - 1</button>
-    <button ngbDropdownItem>Another Action</button>
-    <button ngbDropdownItem>Something else is here</button>
+      <button class="dropdown-item" *ngFor="let sortOrder of namesSort" (click)="changeSortOrder(sortOrder)" >{{sortOrder}}</button>
   </div>
 </div>

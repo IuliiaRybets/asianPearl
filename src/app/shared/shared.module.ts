@@ -4,10 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FilterComponent } from './filter/filter.component';
+import { BrowserModule } from '@angular/platform-browser'
 
 @NgModule({
     imports: [
-        NgbModule
+        NgbModule,
+        BrowserModule
     ],
     declarations: [
         HeaderComponent,
