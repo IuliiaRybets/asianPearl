@@ -15,19 +15,14 @@ export class ProductService {
 
     // public async getProducts(): Promise<Product[]> {
     public getProducts(): BehaviorSubject<Product[]> {
-        console.log("getProducts");
-
-        this.httpClient.get<any>('/api/products').subscribe(
+        this.httpClient.get<any>('http://localhost:1337/api/products?populate=media').subscribe(
             response => {
-                console.log("response=", response);
-
-                this.subject.next(response);
+                console.log("response=", response.data);
+                this.subject.next(response.data);
             }
         );
 
         // const resp = await this.httpClient.get<any>('http://localhost:4000/products').toPromise();
-        // return resp.
-        console.log("product.service.ts: getProducts=", this.subject)
         return this.subject;
     }
 
@@ -36,7 +31,7 @@ export class ProductService {
     public sortProducts(): BehaviorSubject<sortOrders> {
         console.log("sortProducts");
 
-        this.httpClient.get<sortOrders>('/api/sortCategorie').subscribe(
+        this.httpClient.get<sortOrders>('http://localhost:1337/api/sortCategorie').subscribe(
             (response: sortOrders) => {
                 console.log("response=", response);
 

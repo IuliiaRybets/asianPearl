@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProductService } from '../../service/product.service';
 import { Product } from '../product.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-product-item',
@@ -9,10 +10,21 @@ import { Product } from '../product.model';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product: Product | undefined;
+  url: any | undefined
 
-  constructor(private readonly productService: ProductService) { }
+  constructor(private readonly productService: ProductService) {    
+  }
 
   ngOnInit(): void {
+    if(this.product){
+      this.product
+      // console.log(this.product?.attributes?.media?.pop)
+      Object.keys(this.product?.attributes?.media).map(
+        (img: any)=> 
+        {console.log("img", img)});
+    } else {
+      console.log("ERROR: no product is passed to product-item.component.ts")
+    }  
   }
 
   onSelect() {
